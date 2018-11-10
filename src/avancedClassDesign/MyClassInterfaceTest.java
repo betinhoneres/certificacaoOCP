@@ -1,6 +1,8 @@
 package avancedClassDesign;
 
 import java.awt.List;
+import java.io.File;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -49,6 +51,9 @@ public class MyClassInterfaceTest implements Interface1 {
 			map.remove(3, "C");
 			map.remove(4, "B");
 			map.values().forEach(System.out::print);
+
+			File f = new File("diretorio");
+			//Files.readAllLines("teste");
 			
 		}catch (Exception e) {
 		}
